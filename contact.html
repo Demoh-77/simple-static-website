@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Simple Static Site</title>
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/images/logo.svg" alt="Logo" width="36" height="36">
+      <span>Simple Static Site</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <section class="hero">
+    <h1>Contact</h1>
+    <p>This is a small, multi-page static website with images, ready to run in Docker.</p>
+    <a class="btn" href="gallery.html">See the Gallery</a>
+  
+  <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks! This is a demo form.');"><label>Name<input type="text" required></label><label>Email<input type="email" required></label><label>Message<textarea rows="5" required></textarea></label><button class="btn" type="submit">Send</button></form>
+    <article class="card">
+      <img src="assets/images/photo1.svg" alt="Abstract 1">
+      <h3>Fast to Deploy</h3>
+      <p>Static files served with Nginx in a tiny container.</p>
+    </article>
+    <article class="card">
+      <img src="assets/images/photo2.svg" alt="Abstract 2">
+      <h3>Clean Markup</h3>
+      <p>Simple HTML, CSS, and a tiny JS file.</p>
+    </article>
+    <article class="card">
+      <img src="assets/images/photo3.svg" alt="Abstract 3">
+      <h3>GitHub Ready</h3>
+      <p>Drop this into a repo and build on push.</p>
+    </article>
+  
+</main>
+<footer class="site-footer"><div class="container"><p>&copy; <span id="year"></span> Simple Static Site.</p></div></footer>
+</body></html>
